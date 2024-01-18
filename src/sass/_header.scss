@@ -195,17 +195,17 @@
     }
   }
 
-  .search {
-    padding-left: 2rem;
-  }
-
   .nav {
-    margin-left: 0.5rem;
-
+    margin-left: 1rem;
     &__btn {
-      padding: 0;
+      padding: 2px;
       span {
         display: none;
+      }
+
+      &__icon {
+        margin: 0rem;
+        padding: 0rem;
       }
 
       svg {
