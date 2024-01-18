@@ -189,7 +189,7 @@
     &__logo {
       margin: 0 1rem;
       display: flex;
-      min-width: 8rem;
+      min-width: 6rem;
       background-image: url(../img/favicon.png);
     }
   }
@@ -210,7 +210,6 @@
       svg {
         height: 3.5rem;
         width: 3.5rem;
-        // margin-right: 2rem;
       }
 
       &:focus {
