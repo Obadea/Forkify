@@ -117,6 +117,7 @@ class RecipeView extends View {
             <use href="${icons}#icon-arrow-right"></use>
           </svg>
         </a>
+
       </div>
     `;
   }

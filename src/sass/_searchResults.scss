@@ -1,5 +1,5 @@
 .search-results {
-  padding: 3rem 0;
+  padding: 0rem 0rem;
   display: flex;
   flex-direction: column;
 }
@@ -7,6 +7,10 @@
 .results {
   list-style: none;
   margin-bottom: 2rem;
+}
+
+.copyright2 {
+  display: none;
 }
 
 .pagination {
@@ -38,5 +42,18 @@
   .twitter-link:link,
   .twitter-link:visited {
     color: $color-grey-dark-2;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .copyright {
+    display: none;
+  }
+  .copyright2 {
+    display: block;
+  }
+
+  .search-results {
+    margin-bottom: 2rem;
   }
 }

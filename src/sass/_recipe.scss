@@ -177,3 +177,30 @@
     font-weight: 700;
   }
 }
+
+@media screen and (max-width: 550px) {
+  .recipe {
+    &__details {
+      display: flex;
+      align-items: center;
+      padding: 6.5rem 2rem 1rem 2rem;
+    }
+
+    &__user-generated {
+      margin: 1;
+    }
+
+    &__info {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    &__info-icon {
+      height: 2.35rem;
+      width: 2.35rem;
+      fill: $color-primary;
+      margin-right: 0.3rem;
+    }
+  }
+}

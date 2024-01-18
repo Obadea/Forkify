@@ -69,3 +69,19 @@ body {
     border-radius: 0;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .container {
+    max-width: 100%;
+
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 10rem minmax(100rem, auto);
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      'head head'
+      'list recipe';
+  }
+}
