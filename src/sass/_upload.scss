@@ -95,5 +95,78 @@
   &__btn {
     grid-column: 1 / -1;
     justify-self: center;
+    border-radius: 2rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .add-recipe-window {
+    width: 95%;
+  }
+
+  .upload {
+    gap: 1rem 1rem;
+
+    &__column {
+      gap: 1rem;
+
+      & label {
+        font-size: 1.2rem;
+      }
+
+      & input {
+        font-size: 1.3rem;
+      }
+    }
+
+    &__btn {
+      border-radius: 2.5rem;
+      padding: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .add-recipe-window {
+    width: 95%;
+    height: 70vh;
+    overflow-y: scroll;
+    padding: 5rem 3rem;
+  }
+
+  .add-recipe-window::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .upload {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+
+    &__column {
+      grid-template-columns: 1fr;
+      gap: 0.6rem;
+
+      & label {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: inherit;
+      }
+
+      & button {
+        justify-self: center;
+        margin-top: 1rem;
+      }
+    }
+
+    &__heading {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    &__btn {
+      grid-column: 1 / -1;
+      justify-self: center;
+      border-radius: 2rem;
+    }
   }
 }

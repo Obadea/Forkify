@@ -7,8 +7,13 @@
 
   &__logo {
     margin-left: 4rem;
-    height: 4.6rem;
     display: block;
+    width: 10rem;
+    height: 10rem;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
@@ -45,7 +50,7 @@
       width: auto;
 
       &::placeholder {
-        color: white;
+        color: #ecc9a9;
       }
     }
   }
@@ -107,7 +112,6 @@
 .bookmarks {
   padding: 1rem 0;
   position: absolute;
-  // right: 0;
   right: -2.5rem;
   z-index: 10;
   width: 40rem;
@@ -140,5 +144,83 @@
   .nav__btn--bookmarks:hover + & {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    &__logo {
+      margin: 0.5rem;
+      width: 8rem;
+      background-image: url(../img/favicon.png);
+      padding-right: 0.4rem;
+    }
+  }
+
+  .search {
+    &:focus-within {
+      box-shadow: 0 0.7rem 3rem rgba($color-grey-dark-1, 0.15);
+    }
+    &__field {
+      font-size: 1.5rem;
+    }
+
+    &__btn span {
+      display: none;
+    }
+  }
+
+  .btn {
+    padding: 2rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 100%;
+
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+      position: relative;
+      left: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    &__logo {
+      margin: 0.5rem;
+      display: flex;
+      min-width: 8rem;
+      background-image: url(../img/favicon.png);
+    }
+  }
+
+  .search {
+    padding-left: 2rem;
+  }
+
+  .nav {
+    margin-right: 0rem;
+
+    &__btn {
+      padding: 0 1rem;
+
+      span {
+        display: none;
+      }
+
+      svg {
+        height: 3.5rem;
+        width: 3.5rem;
+        margin-right: 0rem;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: $color-grey-light-2;
+      }
+    }
   }
 }
