@@ -215,5 +215,14 @@
     &__info-buttons {
       transform: translateY(-1px);
     }
+
+    &__ingredients {
+      padding: 3rem 2.8rem;
+      font-size: 1.4rem;
+    }
+
+    &__directions {
+      padding: 5rem 3rem;
+    }
   }
 }
